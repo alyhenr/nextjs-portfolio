@@ -6,9 +6,9 @@ export const TAB_DATA = {
         content:
             <>
                 <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
-                    <strong>
+                    <span className="block w-full font-bold mb-3">
                         <li>Languages: </li>
-                    </strong><br />
+                    </span><br />
                     <li>JavaScript {iconsSvg.js} •</li>
                     <li>TypeScript {iconsSvg.ts} •</li>
                     <li>Node.js {iconsSvg.node} •</li>
@@ -19,9 +19,9 @@ export const TAB_DATA = {
                 </ul>
                 <hr className="mt-2 mb-3" />
                 <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
-                    <strong>
+                    <span className="block w-full font-bold mb-3">
                         <li>Frameworks and libraries: </li>
-                    </strong><br />
+                    </span><br />
                     <li>React {iconsSvg.react} •</li>
                     <li>Angular {iconsSvg.angular} •</li>
                     <li>Next.js {iconsSvg.next} •</li>
@@ -37,18 +37,18 @@ export const TAB_DATA = {
                 </ul>
                 <hr className="mt-2 mb-3" />
                 <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
-                    <strong>
+                    <span className="block w-full font-bold mb-3">
                         <li>Databases: </li>
-                    </strong><br />
+                    </span><br />
                     <li>PostgreSQL {iconsSvg.postgres} •</li>
                     <li>MySQL {iconsSvg.mysql} •</li>
                     <li>MongoDB {iconsSvg.mongodb}</li>
                 </ul>
                 <hr className="mt-2 mb-3" />
                 <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
-                    <strong>
+                    <span className="block w-full font-bold mb-3">
                         <li>Cloud and CI/CD: </li>
-                    </strong><br />
+                    </span><br />
                     <li>Docker {iconsSvg.docker}•</li>
                     <li>AWS {iconsSvg.aws}•</li>
                     <li>GitHub {iconsSvg.github}•</li>
@@ -62,15 +62,15 @@ export const TAB_DATA = {
         title: "Education",
         content: <>
             <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
-                <strong>
+                <span className="block w-full font-bold mb-3">
                     <li>Federal University of Technology - Paraná (UTFPR): </li>
-                </strong><br />
+                </span><br />
                 <li>• Mechanical Engineering GPA: 8.5/10</li>
             </ul>
             <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
-                <strong>
+                <span className="block w-full font-bold mb-3">
                     <li>Full Stack Web Development at Driven Education:</li>
-                </strong><br />
+                </span><br />
                 <li>
                     • Intensive training of +1,200 hours focused on +25 practical projects.
                 </li>
@@ -102,9 +102,9 @@ export const TAB_DATA = {
         title: "Certfications",
         content: <>
             <ul className="flex flex-col space-x-1 flex-wrap mb-2">
-                <strong>
+                <span className="block w-full font-bold mb-3">
                     <li>Relevant Coursework: </li>
-                </strong><br />
+                </span><br />
                 <li className="mb-4">• Foundations of Data Structures and Algorithms - University of Colorado Boulder
                     <br /><a
                         href="https://www.coursera.org/account/accomplishments/specialization/certificate/AXYD6BA3KYSQ"
