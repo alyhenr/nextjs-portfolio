@@ -25,11 +25,11 @@ const About = () => {
         <div>
           <h2 className='text-center md:text-left text-4xl font-bold text-white mb-4'>About me</h2>
           <p className='text-base md:text-lg'>
-            Curiosity and a passion for learning have driven me to venture into various topics and fields; however, it was in programming that I found my true calling.<br />
+            Curiosity and a passion for learning have driven me to venture into various topics and fields. However, it was in programming that I found my true calling.<br />
 
             Self-directed learning has always played a significant role in my life. And after taking my first steps in the world of programming, I was certain that this was the path I wanted for my career.<br />
 
-            And here I&apos;m, doing what I love and getting better every day!
+            And here I am, doing what I love and getting better at it every day!
 
             Let&apos;s build something together!<br /><br />
             Email: <a href="mailto:alyssonhra99@gmail.com">

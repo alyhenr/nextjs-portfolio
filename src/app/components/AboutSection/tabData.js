@@ -1,3 +1,7 @@
+import { SiPrisma, SiStyledcomponents, SiAxios } from "react-icons/si";
+import { FaGithub } from "react-icons/fa"
+
+
 import iconsSvg from "./svgIcons";
 
 export const TAB_DATA = {
@@ -28,12 +32,12 @@ export const TAB_DATA = {
                     <li>SpringBoot {iconsSvg.spring} •</li>
                     <li>Django {iconsSvg.django} •</li>
                     <li>Nest.js {iconsSvg.nest} •</li>
-                    <li>PrismaORM •</li>
+                    <li>PrismaORM <SiPrisma size={25} /> •</li>
                     <li>Express {iconsSvg.express} •</li>
-                    <li>Axios.js •</li>
+                    <li>Axios.js <SiAxios size={25} />•</li>
                     <li>Tailwind {iconsSvg.tailwind} •</li>
-                    <li>Styled-components •</li>
-                    <li>MaterialUI {iconsSvg.materialui} •</li>
+                    <li>Styled-components <SiStyledcomponents size={35} /> •</li>
+                    <li>MaterialUI {iconsSvg.materialui}</li>
                 </ul>
                 <hr className="mt-2 mb-3" />
                 <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
@@ -47,12 +51,11 @@ export const TAB_DATA = {
                 <hr className="mt-2 mb-3" />
                 <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
                     <span className="block w-full font-bold mb-3">
-                        <li>Cloud and CI/CD: </li>
+                        <li>DevOps, CI/CD: </li>
                     </span><br />
                     <li>Docker {iconsSvg.docker}•</li>
                     <li>AWS {iconsSvg.aws}•</li>
-                    <li>GitHub {iconsSvg.github}•</li>
-                    <li>GitHub Actions</li>
+                    <li>GitHub - GitHub Actions <FaGithub size={25} /></li>
                 </ul>
                 <hr className="mt-2 mb-3" />
 

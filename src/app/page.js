@@ -1,7 +1,7 @@
 import NavBar from "./components/common/NavBar";
 import Hero from "./components/HeroSection/Hero";
 import About from "./components/AboutSection/About";
-import Projects from "./components/ProjectsSection/Projects";
+import { Email } from "./components/EmailSection/Email";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <div className='container mx-auto mt-24 py-8 px-12'>
         <Hero />
         <About />
-        <Projects />
+        <Email />
       </div>
     </main>
   )
