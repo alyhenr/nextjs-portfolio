@@ -9,7 +9,7 @@ import MenuOverlay from './MenuOverlay';
 import Logo from "../../../../public/logo.png"
 import Image from 'next/image';
 
-const menuItems = ['About', 'Projects', 'Contact me'];
+const menuItems = ['About', 'Contact me'];
 
 const MenuItems = ({ mobile = false, setOpenMenu = () => { } }) => {
     return (
@@ -34,12 +34,12 @@ const NavBar = () => {
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
+        <nav className='fixed top-0 left-0 right-0 z-20 bg-[#121212] bg-opacity-100'>
             <div className='flex flex-wrap justify-between items-center mx-auto p-8'>
                 <Link
                     href={"/"}
                     className='text-3xl md:text-5xl text-white font-semibold'
-                ><Image src={Logo} alt='alyhenr logo' width={300} /></Link>
+                ><Image src={Logo} alt='alyhenr logo' width={200} /></Link>
                 {/* //Small screen - menu*/}
                 <button className='flex items-center px-3 py-2 text-slate-200 border border-slate-200 rounded-md hover:text-white md:hidden'
                     onClick={() => setOpenMenu(prev => !prev)}>

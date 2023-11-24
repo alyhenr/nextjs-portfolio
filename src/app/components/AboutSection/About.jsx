@@ -20,7 +20,7 @@ const About = () => {
   };
 
   return (
-    <section className='text-white' id='about'>
+    <section className='text-white pt-12' id='about'>
       <div className='grid md:grid-cols-2 gap-8 space-y-8 items-center justify-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <div>
           <h2 className='text-center md:text-left text-4xl font-bold text-white mb-4'>About me</h2>
@@ -32,7 +32,7 @@ const About = () => {
             And here I am, doing what I love and getting better at it every day!
 
             Let&apos;s build something together!<br /><br />
-            Email: <a href="mailto:alyssonhra99@gmail.com">
+            Email: <a href="#contact-me">
               <strong>
                 alyssonhra99@gmail.com
               </strong>

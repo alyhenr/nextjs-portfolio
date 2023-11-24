@@ -66,7 +66,7 @@ export const Email = () => {
                     </Link>
                 </div>
             </div>
-            <div>
+            <div className='z-20'>
                 <form className='flex flex-col gap-3' onSubmit={ev => handleSubmit(ev)}>
                     <label
                         htmlFor="senderEmail"
