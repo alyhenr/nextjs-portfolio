@@ -6,9 +6,12 @@ import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay';
 
+import Logo from "../../../../public/logo.png"
+import Image from 'next/image';
+
 const menuItems = ['About', 'Projects', 'Contact me'];
 
-const MenuItems = ({ mobile=false, setOpenMenu=()=>{} }) => {
+const MenuItems = ({ mobile = false, setOpenMenu = () => { } }) => {
     return (
         menuItems.map(item => (
             <li key={item}>
@@ -16,7 +19,7 @@ const MenuItems = ({ mobile=false, setOpenMenu=()=>{} }) => {
                     className='block py-2 pl-3 pr-4 text-[#ADB7BE] text-2xl sm:text-xl rounded md:p-0 hover:text-white'
                     href={`#${item.toLowerCase().replace(" ", "-")}`}
                     onClick={() => {
-                        if(!mobile) { return; }
+                        if (!mobile) { return; }
                         else { setOpenMenu(false); }
                     }}
                 >
@@ -36,15 +39,15 @@ const NavBar = () => {
                 <Link
                     href={"/"}
                     className='text-3xl md:text-5xl text-white font-semibold'
-                >Logo</Link>
+                ><Image src={Logo} alt='alyhenr logo' width={300} /></Link>
                 {/* //Small screen - menu*/}
                 <button className='flex items-center px-3 py-2 text-slate-200 border border-slate-200 rounded-md hover:text-white md:hidden'
                     onClick={() => setOpenMenu(prev => !prev)}>
-                {!openMenu
-                    ? <Bars3Icon
-                        className='h-5 w-5' />
-                    : <XMarkIcon
-                        className='h-5 w-5' />}
+                    {!openMenu
+                        ? <Bars3Icon
+                            className='h-5 w-5' />
+                        : <XMarkIcon
+                            className='h-5 w-5' />}
                 </button>
                 {/* Medium screen */}
                 <div className='menu hidden md:block md:w-auto' id='navbar'>

@@ -24,10 +24,10 @@ export const Email = () => {
                     welcome to reach me out!
                 </p>
                 <div className='socials flex flex-row gap-5 mt-10'>
-                    <Link href="https://github.com/alyhenr">
+                    <Link href="https://github.com/alyhenr" target="_blank" rel="noopener noreferrer">
                         <FaGithub size={35} className='hover:scale-110' />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/alysson-henrique-r-de-almeida/">
+                    <Link href="https://www.linkedin.com/in/alysson-henrique-r-de-almeida/" target="_blank" noopener="noreferrer">
                         <FaLinkedinIn size={35} className='hover:scale-110' />
                     </Link>
                 </div>
