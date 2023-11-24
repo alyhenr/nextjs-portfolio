@@ -22,7 +22,7 @@ const Hero = () => {
                         I&apos;m a full stack developer and I&apos;m looking forward to be part of a team and contribute with my skills!
                     </p>
                     <Link
-                        href="/#contact"
+                        href="/#contact-me"
                         className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 hover:opacity-95 text-white"
                     >
                         Hire Me
