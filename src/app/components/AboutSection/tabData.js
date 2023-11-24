@@ -9,7 +9,7 @@ export const TAB_DATA = {
         title: "Skills",
         content:
             <>
-                <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
+                <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2 [&>li]:mb-2">
                     <span className="block w-full font-bold mb-3">
                         <li>Languages: </li>
                     </span><br />
@@ -22,7 +22,7 @@ export const TAB_DATA = {
                     <li>C++ {iconsSvg.cpp}</li>
                 </ul>
                 <hr className="mt-2 mb-3" />
-                <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
+                <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2 [&>li]:mb-2">
                     <span className="block w-full font-bold mb-3">
                         <li>Frameworks and libraries: </li>
                     </span><br />
@@ -40,7 +40,7 @@ export const TAB_DATA = {
                     <li>MaterialUI {iconsSvg.materialui}</li>
                 </ul>
                 <hr className="mt-2 mb-3" />
-                <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
+                <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2 [&>li]:mb-2">
                     <span className="block w-full font-bold mb-3">
                         <li>Databases: </li>
                     </span><br />
@@ -49,7 +49,7 @@ export const TAB_DATA = {
                     <li>MongoDB {iconsSvg.mongodb}</li>
                 </ul>
                 <hr className="mt-2 mb-3" />
-                <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
+                <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2 [&>li]:mb-2">
                     <span className="block w-full font-bold mb-3">
                         <li>DevOps, CI/CD: </li>
                     </span><br />
@@ -64,13 +64,13 @@ export const TAB_DATA = {
     "education": {
         title: "Education",
         content: <>
-            <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
+            <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2 [&>li]:mb-2">
                 <span className="block w-full font-bold mb-3">
                     <li>Federal University of Technology - Paraná (UTFPR): </li>
                 </span><br />
                 <li>• Mechanical Engineering GPA: 8.5/10</li>
             </ul>
-            <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2">
+            <ul className="flex flex-row space-x-1 flex-wrap mb-2 [&>li]:flex [&>li]:items-center [&>li]:gap-2 [&>li]:mb-2">
                 <span className="block w-full font-bold mb-3">
                     <li>Full Stack Web Development at Driven Education:</li>
                 </span><br />

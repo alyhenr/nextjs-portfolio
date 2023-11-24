@@ -1,14 +1,48 @@
 "use client"
 
+import axios from 'axios'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 
+import Swal from 'sweetalert2'
+
 export const Email = () => {
+    const [data, setData] = useState({
+        senderEmail: "",
+        subject: "",
+        message: ""
+    });
+
+    const handleSubmit = async ev => {
+        ev.preventDefault();
+        try {
+            Swal.fire({
+                title: 'Sending...',
+                icon: 'info',
+                timerProgressBar: true,
+            });
+
+            await axios.post("/api/send", data);
+
+            Swal.fire({
+                title: "Email sent. I'l reach you back as soon as possible. Thank you!",
+                icon: 'success',
+                timer: 2000,
+            });
+        } catch (error) {
+            Swal.fire({
+                title: 'Email not sent...',
+                icon: 'error',
+                text: 'Please check if the fields are all properly filled, and try again.'
+            })
+        }
+    }
+
     return (
         <section
-            id="contact"
+            id="contact-me"
             className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
         >
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-[400px] w-[400px] z-0 blur-xl absolute top-10 left-20 transform -translate-x-1/2 -translate-1/2"></div>
@@ -33,14 +67,21 @@ export const Email = () => {
                 </div>
             </div>
             <div>
-                <form className='flex flex-col gap-3'>
+                <form className='flex flex-col gap-3' onSubmit={ev => handleSubmit(ev)}>
                     <label
-                        htmlFor="email"
+                        htmlFor="senderEmail"
                         className='text-white block text-sm font-medium'
                     >Your email</label>
                     <input
-                        name="email"
-                        id="email"
+                        required
+                        value={data.senderEmail ?? ""}
+                        onChange={(ev) => {
+                            setData(prev => ({
+                                ...prev, [ev.target.name]: ev.target.value
+                            }))
+                        }}
+                        name="senderEmail"
+                        id="senderEmail"
                         type="email"
                         placeholder='youremail@example.com'
                         className='bg-[#18191E] border border-[#33353F]  placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
@@ -50,6 +91,13 @@ export const Email = () => {
                         className='text-white block text-sm font-medium'
                     >Subject</label>
                     <input
+                        required
+                        value={data.subject ?? ""}
+                        onChange={(ev) => {
+                            setData(prev => ({
+                                ...prev, [ev.target.name]: ev.target.value
+                            }))
+                        }}
                         name="subject"
                         id="subject"
                         type="text"
@@ -61,6 +109,13 @@ export const Email = () => {
                         className='text-white block text-sm font-medium'
                     >Message</label>
                     <textarea
+                        required
+                        value={data.message ?? ""}
+                        onChange={(ev) => {
+                            setData(prev => ({
+                                ...prev, [ev.target.name]: ev.target.value
+                            }))
+                        }}
                         name="message"
                         id="message"
                         type="text"
