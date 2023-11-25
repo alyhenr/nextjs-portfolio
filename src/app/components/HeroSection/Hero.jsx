@@ -7,8 +7,8 @@ import avatar from '../../../assets/avatar.png';
 import HeroTypeAnimation from './HeroTypeAnimation';
 import Link from 'next/link';
 
-const PT_CV = '/cvs/pt_br.pdf';
-const EN_CV = '/cvs/en.pdf';
+const PT_CV = '/cvs/alysson-cv-pt_br.pdf';
+const EN_CV = '/cvs/alysson-cv-en.pdf';
 
 const Hero = () => {
     const [showCvs, setShowCvs] = useState(false);
@@ -23,10 +23,6 @@ const Hero = () => {
         window.addEventListener("click", clickOutsideCVS);
         return () => { window.removeEventListener("click", clickOutsideCVS); };
     }, [clickOutsideCVS]);
-
-    const downloadCV = url => {
-
-    }
 
     return (
         <section>
