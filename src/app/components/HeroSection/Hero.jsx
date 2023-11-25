@@ -7,6 +7,8 @@ import avatar from '../../../assets/avatar.png';
 import HeroTypeAnimation from './HeroTypeAnimation';
 import Link from 'next/link';
 
+import { motion } from "framer-motion";
+
 const PT_CV = '/cvs/alysson-cv-pt_br.pdf';
 const EN_CV = '/cvs/alysson-cv-en.pdf';
 
@@ -26,7 +28,12 @@ const Hero = () => {
 
     return (
         <section>
-            <div className='grid grid-cols-1 lg:grid-cols-12'>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className='grid grid-cols-1 lg:grid-cols-12'
+            >
                 <div className='col-span-7 place-self-center text-center sm:text-left'>
                     <h1 className='text-white mb-4 text-5xl lg:text-6xl font-extrabold'>
                         <span className='text-transparent bg-clip-text bg-gradient-to-l from-pink-500 to-purple-400'>
@@ -81,7 +88,7 @@ const Hero = () => {
                         />
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }
