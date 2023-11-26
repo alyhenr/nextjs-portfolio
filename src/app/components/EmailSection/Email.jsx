@@ -50,7 +50,7 @@ export const Email = () => {
                 <h5 className='text-xl font-bold text-white my-2'>
                     Let&apos;s Connect!
                 </h5>
-                <p>
+                <p className='text-white'>
                     {" "}
                     I&apos;m open for new challenges and opportunities, if you
                     want to team up with someone passionate about techonology and
