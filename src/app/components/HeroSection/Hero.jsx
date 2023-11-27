@@ -60,7 +60,7 @@ const Hero = () => {
                         >
                             Download CV
                         </span>
-                        <ul className={`${showCvs ? 'inline' : 'hidden'} absolute top-14 p-2 bg-primary-500 rounded-lg [&>li]:m-1 [&>li]:p-2`}>
+                        <ul className={`${showCvs ? 'inline' : 'hidden'} z-30 absolute top-14 p-2 bg-primary-500 rounded-lg [&>li]:m-1 [&>li]:p-2`}>
                             <li
                                 className='hover:bg-primary-400 rounded-xl'>
                                 <a href={PT_CV} download="alysson-henrique-cv-pt.pdf">
